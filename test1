@@ -1,0 +1,27 @@
+import java.math.*;
+public class t {
+	public static void main(String[] args) {
+		int x = -1;
+		for(int i=0;i<8;i++) {
+			int a = 7-i;
+			for(int j=0;j<a;j++) {
+				System.out.print("  ");
+			}
+			for(int k=1;k<=7-a;k++) {
+				int m = (int)(Math.pow(2,k-1));
+				System.out.print( m + " " );
+			}
+			x++;
+			System.out.print((int)Math.pow(2, x));
+			for(int k=7-a;k>0;k--) {
+				int m = (int) Math.pow(2,k-1);
+				System.out.print( " " + m);
+			}
+			for(int j=0;j<a;j++) {
+				System.out.print("  ");
+			}
+			System.out.println("");
+		}
+	}
+
+}
